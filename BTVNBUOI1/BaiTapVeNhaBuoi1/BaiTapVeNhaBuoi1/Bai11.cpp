@@ -64,6 +64,19 @@ void segregateEvenOdd(int arr[], int size) {
         }
     }
 }
+// Hàm kiểm tra mảng có chứa số chẵn lẻ xen kẽ không
+int checkAlternatingEvenOdd(int arr[], int size) {
+    if (size < 2) {
+        return 1; // Mảng nhỏ hơn 2 phần tử là xen kẽ theo định nghĩa
+    }
+
+    for (int i = 1; i < size; i++) {
+        if ((arr[i] % 2 == arr[i - 1] % 2)) {
+            return 0; // Nếu hai phần tử liên tiếp cùng chẵn hoặc cùng lẻ thì không xen kẽ
+        }
+    }
+    return 1; // Mảng chứa số chẵn lẻ xen kẽ
+}
 int main() {
     int arr[SIZE] = { 1, 2, 4, 3, 7, 8, 6, 9, 10, 5 };
     int size = 10;
@@ -76,6 +89,7 @@ int main() {
         printf("2. Xoa phan tu tai vi tri k\n");
         printf("3. Them phan tu x tai vi tri k\n");
         printf("4. Chuyen so chan len dau, so le xuong cuoi\n");
+        printf("5. Kiem tra mang co chua chan le xen ke\n");
         printf("6. Thoat\n");
         printf("Chon tu 1 den 6: ");
         scanf("%d", &choice);
@@ -116,6 +130,14 @@ int main() {
                 printf("%d ", arr[i]);
             }
             printf("\n");
+            break;
+        case 5:
+            if (checkAlternatingEvenOdd(arr, size)) {
+                printf("Mang chua so chan le xen ke.\n");
+            }
+            else {
+                printf("Mang khong chua so chan le xen ke.\n");
+            }
             break;
         case 6:
             printf("Thoat chuong trinh.\n");
