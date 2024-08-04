@@ -43,6 +43,27 @@ void insertElement(int arr[], int* size, int k, int x) {
     arr[k] = x;
     (*size)++;
 }
+// Hàm chuyển số chẵn lên đầu mảng, số lẻ xuống cuối mảng
+void segregateEvenOdd(int arr[], int size) {
+    int left = 0;
+    int right = size - 1;
+
+    while (left < right) {
+        while (arr[left] % 2 == 0 && left < right) {
+            left++;
+        }
+        while (arr[right] % 2 != 0 && left < right) {
+            right--;
+        }
+        if (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+    }
+}
 int main() {
     int arr[SIZE] = { 1, 2, 4, 3, 7, 8, 6, 9, 10, 5 };
     int size = 10;
@@ -53,6 +74,8 @@ int main() {
         printf("\nMenu:\n");
         printf("1. Xuat cac so cuc tieu\n");
         printf("2. Xoa phan tu tai vi tri k\n");
+        printf("3. Them phan tu x tai vi tri k\n");
+        printf("4. Chuyen so chan len dau, so le xuong cuoi\n");
         printf("6. Thoat\n");
         printf("Chon tu 1 den 6: ");
         scanf("%d", &choice);
@@ -81,6 +104,14 @@ int main() {
             scanf("%d", &x);
             insertElement(arr, &size, k, x);
             printf("Mang sau khi them phan tu: ");
+            for (int i = 0; i < size; i++) {
+                printf("%d ", arr[i]);
+            }
+            printf("\n");
+            break;
+        case 4:
+            segregateEvenOdd(arr, size);
+            printf("Mang sau khi chuyen so chan len dau, so le xuong cuoi: ");
             for (int i = 0; i < size; i++) {
                 printf("%d ", arr[i]);
             }
