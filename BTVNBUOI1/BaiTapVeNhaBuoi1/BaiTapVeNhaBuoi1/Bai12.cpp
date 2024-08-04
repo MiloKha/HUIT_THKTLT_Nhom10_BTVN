@@ -47,7 +47,18 @@ Fraction findMinFraction(const Fraction arr[], int size) {
     }
     return minFraction;
 }
+// Hàm xóa phần tử tại vị trí k
+void deleteElement(Fraction arr[], int& size, int k) {
+    if (k < 0 || k >= size) {
+        std::cerr << "Vi tri xoa khong hop le." << std::endl;
+        return;
+    }
 
+    for (int i = k; i < size - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+    size--;
+}
 
 int main() {
     Fraction arr[100];
@@ -71,7 +82,7 @@ int main() {
         std::cout << "\nMenu:\n";
         std::cout << "1. Tim phan so lon nhat\n";
         std::cout << "2. Tim phan so nho nhat\n";
-        
+        std::cout << "3. Xoa phan tu tai vi tri k\n";
         std::cout << "5. Thoat\n";
         std::cout << "Chon tu 1 den 5: ";
         std::cin >> choice;
@@ -89,7 +100,16 @@ int main() {
             std::cout << "Phan so nho nhat: " << minFraction.numerator << "/" << minFraction.denominator << std::endl;
         }
         break;
-        
+        case 3:
+            std::cout << "Nhap vi tri k: ";
+            std::cin >> k;
+            deleteElement(arr, size, k);
+            std::cout << "Mang sau khi xoa phan tu: \n";
+            for (int i = 0; i < size; i++) {
+                std::cout << arr[i].numerator << "/" << arr[i].denominator << " ";
+            }
+            std::cout << std::endl;
+            break;
         case 5:
             std::cout << "Thoat chuong trinh.\n";
             break;
