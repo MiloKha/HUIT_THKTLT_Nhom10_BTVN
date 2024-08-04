@@ -19,7 +19,19 @@ void convertToUpper(char *st) {
     }
 }
 
-
+// Hàm chuyển ký tự đầu mỗi từ về dạng chữ hoa
+void capitalizeWords(char *st) {
+    int newWord = 1;  // Biến để theo dõi ký tự đầu của mỗi từ
+    while (*st) {
+        if (isspace((unsigned char)*st)) {
+            newWord = 1;
+        } else if (newWord) {
+            *st = toupper((unsigned char)*st);
+            newWord = 0;
+        }
+        st++;
+    }
+}
 
 int main() {
     char st[100];
@@ -56,7 +68,10 @@ int main() {
                 convertToUpper(st);
                 printf("Chuoi sau khi chuyen ve chu hoa: %s\n", st);
                 break;
-          
+            case 3:
+                capitalizeWords(st);
+                printf("Chuoi sau khi chuyen ky tu dau moi tu ve chu hoa: %s\n", st);
+                break;
             case 4:
                 printf("Thoat chuong trinh.\n");
                 break;
