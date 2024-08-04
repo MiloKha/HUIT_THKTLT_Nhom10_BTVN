@@ -59,7 +59,19 @@ void deleteElement(Fraction arr[], int& size, int k) {
     }
     size--;
 }
+// Hàm thêm phần tử x tại vị trí k
+void insertElement(Fraction arr[], int& size, int k, const Fraction& x) {
+    if (k < 0 || k > size || size >= 100) { // Giới hạn kích thước mảng
+        std::cerr << "Vi tri them khong hop le hoac mang da day." << std::endl;
+        return;
+    }
 
+    for (int i = size; i > k; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[k] = x;
+    size++;
+}
 int main() {
     Fraction arr[100];
     int size = 0;
@@ -83,6 +95,7 @@ int main() {
         std::cout << "1. Tim phan so lon nhat\n";
         std::cout << "2. Tim phan so nho nhat\n";
         std::cout << "3. Xoa phan tu tai vi tri k\n";
+        std::cout << "4. Them phan tu x tai vi tri k\n";
         std::cout << "5. Thoat\n";
         std::cout << "Chon tu 1 den 5: ";
         std::cin >> choice;
@@ -105,6 +118,18 @@ int main() {
             std::cin >> k;
             deleteElement(arr, size, k);
             std::cout << "Mang sau khi xoa phan tu: \n";
+            for (int i = 0; i < size; i++) {
+                std::cout << arr[i].numerator << "/" << arr[i].denominator << " ";
+            }
+            std::cout << std::endl;
+            break;
+        case 4:
+            std::cout << "Nhap vi tri k: ";
+            std::cin >> k;
+            std::cout << "Nhap tu so va mau so cho phan so x: ";
+            std::cin >> x.numerator >> x.denominator;
+            insertElement(arr, size, k, x);
+            std::cout << "Mang sau khi them phan tu: \n";
             for (int i = 0; i < size; i++) {
                 std::cout << arr[i].numerator << "/" << arr[i].denominator << " ";
             }
