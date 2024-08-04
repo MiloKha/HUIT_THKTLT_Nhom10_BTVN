@@ -1,2 +1,5 @@
-﻿  Bai12.cpp
+﻿  13.cpp
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\13.cpp(8,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\13.cpp(18,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\13.cpp(58,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   BaiTapVeNhaBuoi1.vcxproj -> D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\x64\Debug\BaiTapVeNhaBuoi1.exe
