@@ -30,7 +30,19 @@ void deleteElement(int arr[], int* size, int k) {
     }
     (*size)--;
 }
+// Hàm thêm phần tử x tại vị trí k
+void insertElement(int arr[], int* size, int k, int x) {
+    if (k < 0 || k > *size || *size >= SIZE) {
+        printf("Vi tri them khong hop le hoac mang da day.\n");
+        return;
+    }
 
+    for (int i = *size; i > k; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[k] = x;
+    (*size)++;
+}
 int main() {
     int arr[SIZE] = { 1, 2, 4, 3, 7, 8, 6, 9, 10, 5 };
     int size = 10;
@@ -57,6 +69,18 @@ int main() {
             scanf("%d", &k);
             deleteElement(arr, &size, k);
             printf("Mang sau khi xoa phan tu: ");
+            for (int i = 0; i < size; i++) {
+                printf("%d ", arr[i]);
+            }
+            printf("\n");
+            break;
+        case 3:
+            printf("Nhap vi tri k: ");
+            scanf("%d", &k);
+            printf("Nhap gia tri x: ");
+            scanf("%d", &x);
+            insertElement(arr, &size, k, x);
+            printf("Mang sau khi them phan tu: ");
             for (int i = 0; i < size; i++) {
                 printf("%d ", arr[i]);
             }

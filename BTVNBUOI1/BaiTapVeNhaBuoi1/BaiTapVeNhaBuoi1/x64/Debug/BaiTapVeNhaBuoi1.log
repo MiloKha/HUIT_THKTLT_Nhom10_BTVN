@@ -1,5 +1,6 @@
 ﻿  Bai11.cpp
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(46,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(57,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(37,20): warning C4101: 'x': unreferenced local variable
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(58,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(69,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(79,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\BaiTapVeNhaBuoi1\Bai11.cpp(81,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   BaiTapVeNhaBuoi1.vcxproj -> D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI1\BaiTapVeNhaBuoi1\x64\Debug\BaiTapVeNhaBuoi1.exe
