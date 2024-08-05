@@ -44,7 +44,22 @@ void sapXepCot(int a[][100], int n) {
         }
     }
 }
-
+// Hàm sắp xếp các phần tử trên các đường chéo chính và song song với nó tăng dần
+void sapXepCheoChinhVaSongSong(int a[][100], int n) {
+    for (int d = -n + 1; d < n; d++) {  // d là độ lệch so với đường chéo chính
+        for (int i = 0; i < n; i++) {
+            int j = i + d;
+            if (j >= 0 && j < n) {
+                for (int k = i + 1; k < n; k++) {
+                    int l = k + d;
+                    if (l >= 0 && l < n && a[i][j] > a[k][l]) {
+                        swap(&a[i][j], &a[k][l]);
+                    }
+                }
+            }
+        }
+    }
+}
 int main() {
     int a[100][100], n;
     int choice, tangDan;
@@ -97,6 +112,16 @@ int main() {
         case 3:
             sapXepCot(a, n);
             printf("Ma trận sau khi sắp xếp theo cột:\n");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    printf("%d ", a[i][j]);
+                }
+                printf("\n");
+            }
+            break;
+        case 4:
+            sapXepCheoChinhVaSongSong(a, n);
+            printf("Ma trận sau khi sắp xếp các đường chéo:\n");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     printf("%d ", a[i][j]);
