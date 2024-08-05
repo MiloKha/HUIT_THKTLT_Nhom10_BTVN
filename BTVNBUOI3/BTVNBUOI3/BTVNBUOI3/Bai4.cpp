@@ -85,6 +85,17 @@ void diChuyenChanLe(int a[][100], int n) {
         }
     }
 }
+// Hàm kiểm tra đối xứng qua đường chéo chính
+int kiemTraDoiXung(int a[][100], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            if (a[i][j] != a[j][i]) {
+                return 0; // Không đối xứng
+            }
+        }
+    }
+    return 1; // Đối xứng
+}
 int main() {
     int a[100][100], n;
     int choice, tangDan;
@@ -105,7 +116,7 @@ int main() {
         printf("2. Sắp xếp dòng lẻ tăng dần, dòng chẵn giảm dần\n");
         printf("3. Sắp xếp cột lẻ giảm dần, cột chẵn tăng dần\n");
         printf("4. Sắp xếp các đường chéo chính và song song với nó tăng dần\n");
-        printf("5. Di chuyển các phần tử chẵn lên trên, lẻ xuống dưới\n");
+        printf("5. Di chuyển các phần tử chẵn lên trên,lẻ xuống dưới\n");
         printf("6. Kiểm tra đối xứng qua đường chéo chính\n");
         printf("0. Thoát\n");
         printf("Lựa chọn của bạn: ");
@@ -164,6 +175,15 @@ int main() {
                 printf("\n");
             }
             break;
+        case 6:
+            if (kiemTraDoiXung(a, n)) {
+                printf("Ma trận đối xứng qua đường chéo chính.\n");
+            }
+            else {
+                printf("Ma trận không đối xứng qua đường chéo chính.\n");
+            }
+            break;
+     
         case 0:
             printf("Thoát chương trình.\n");
             break;
