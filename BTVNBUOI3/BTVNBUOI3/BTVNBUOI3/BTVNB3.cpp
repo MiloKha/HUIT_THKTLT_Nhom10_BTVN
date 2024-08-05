@@ -16,6 +16,7 @@ int kiemTraZigzag(int a[MAX][MAX], int m, int n);
 void lietKeDongChan(int a[MAX][MAX], int m, int n);
 void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
+void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -44,6 +45,7 @@ int main() {
         printf("9. Liet ke chi so cac dong chua toan gia tri chan\n");
         printf("10. Liet ke cac dong chua gia tri giam dan\n");
         printf("11. Tim gia tri xuat hien nhieu nhat trong ma tran\n");
+        printf("12. Tim chu so xuat hien nhieu nhat trong ma tran\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -84,6 +86,9 @@ int main() {
             break;
         case 11:
             timGiaTriXuatHienNhieuNhat(a, m, n);
+            break;
+        case 12:
+            timChuSoXuatHienNhieuNhat(a, m, n);
             break;
         case 0:
 
