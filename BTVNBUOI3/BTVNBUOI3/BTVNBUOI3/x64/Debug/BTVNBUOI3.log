@@ -1,10 +1,10 @@
 ﻿  BTVNB3.cpp
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(29,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(20,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(22,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(43,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(17,51): warning C4101: 'k': unreferenced local variable
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(17,54): warning C4101: 'l': unreferenced local variable
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(17,48): warning C4101: 'j': unreferenced local variable
-D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(17,45): warning C4101: 'i': unreferenced local variable
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(30,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(21,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(23,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(45,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(18,51): warning C4101: 'k': unreferenced local variable
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(18,54): warning C4101: 'l': unreferenced local variable
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(18,48): warning C4101: 'j': unreferenced local variable
+D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\BTVNBUOI3\BTVNB3.cpp(18,45): warning C4101: 'i': unreferenced local variable
   BTVNBUOI3.vcxproj -> D:\HK3 nam 3\HUIT_THKTLT_NHOM10_BTVN\BTVNBUOI3\BTVNBUOI3\x64\Debug\BTVNBUOI3.exe

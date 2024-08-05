@@ -13,6 +13,7 @@ void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
 void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
 void sapXepCotMaTran(int a[MAX][MAX], int m, int n);
 int kiemTraZigzag(int a[MAX][MAX], int m, int n);
+void lietKeDongChan(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -38,6 +39,7 @@ int main() {
         printf("6. Sap xep ma tran theo dong (dong le tang dan, dong chan giam dan)\n");
         printf("7. Sap xep ma tran theo cot (cot le giam dan, cot chan tang dan)\n");
         printf("8. Kiem tra ma tran co sap xep theo thu tu zigzag\n");
+        printf("9. Liet ke chi so cac dong chua toan gia tri chan\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -70,7 +72,11 @@ int main() {
         case 8:
             printf("Ma tran %s sap xep theo thu tu zigzag.\n", kiemTraZigzag(a, m, n) ? "da" : "khong da");
             break;
+        case 9:
+            lietKeDongChan(a, m, n);
+            break;
         case 0:
+
             exit(0);
         default:
             printf("Lua chon khong hop le!\n");
