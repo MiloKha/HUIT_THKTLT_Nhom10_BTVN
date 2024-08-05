@@ -1,9 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BaiTapVeNhaBuoi1\\",
+  "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai14.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai14.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\13.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\13.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai12.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1BAB8ACD-DD32-4E0A-A617-968E95D23E70}|BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1.vcxproj|solutionrelative:BaiTapVeNhaBuoi1\\Bai5Vn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -19,15 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Bai14.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai14.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai14.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai14.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai14.cpp",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T10:55:15.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "13.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\13.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\13.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\13.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\13.cpp",
+              "ViewState": "AQIAAEYAAAAAAAAAAAApwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T10:50:09.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bai12.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai12.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai12.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai12.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai12.cpp",
+              "ViewState": "AQIAAHMAAAAAAAAAAAApwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T10:35:14.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bai11.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai11.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai11.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai11.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai11.cpp",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T10:08:43.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bai10.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai10.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai10.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai10.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai10.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T09:53:47.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bai9.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai9.cpp",
+              "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai9.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai9.cpp",
+              "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai9.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-04T09:44:55.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Bai5Vn.cpp",
-              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
               "RelativeDocumentMoniker": "BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
-              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI1\\BaiTapVeNhaBuoi1\\BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
               "RelativeToolTip": "BaiTapVeNhaBuoi1\\Bai5Vn.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-04T09:21:18.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T09:21:18.521Z"
             }
           ]
         }

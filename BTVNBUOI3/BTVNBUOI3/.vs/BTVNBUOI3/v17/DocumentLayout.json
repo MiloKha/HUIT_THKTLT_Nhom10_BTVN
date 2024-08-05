@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI3\\BTVNBUOI3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE17011-6C7E-4CCB-B01A-251A53504DE9}|BTVNBUOI3\\BTVNBUOI3.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI3\\BTVNBUOI3\\BTVNBUOI3\\BTVNB3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9DE17011-6C7E-4CCB-B01A-251A53504DE9}|BTVNBUOI3\\BTVNBUOI3.vcxproj|solutionrelative:BTVNBUOI3\\BTVNB3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BTVNB3.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI3\\BTVNBUOI3\\BTVNBUOI3\\BTVNB3.cpp",
+              "RelativeDocumentMoniker": "BTVNBUOI3\\BTVNB3.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI3\\BTVNBUOI3\\BTVNBUOI3\\BTVNB3.cpp",
+              "RelativeToolTip": "BTVNBUOI3\\BTVNB3.cpp",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-05T06:29:32.087Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
