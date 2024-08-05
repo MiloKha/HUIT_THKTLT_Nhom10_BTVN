@@ -32,6 +32,18 @@ void sapXepDong(int a[][100], int n) {
         }
     }
 }
+// Hàm sắp xếp cột lẻ giảm dần, cột chẵn tăng dần
+void sapXepCot(int a[][100], int n) {
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < n - 1; i++) {
+            for (int k = i + 1; k < n; k++) {
+                if ((j % 2 == 0 && a[i][j] > a[k][j]) || (j % 2 != 0 && a[i][j] < a[k][j])) {
+                    swap(&a[i][j], &a[k][j]);
+                }
+            }
+        }
+    }
+}
 
 int main() {
     int a[100][100], n;
@@ -75,6 +87,16 @@ int main() {
         case 2:
             sapXepDong(a, n);
             printf("Ma trận sau khi sắp xếp theo dòng:\n");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    printf("%d ", a[i][j]);
+                }
+                printf("\n");
+            }
+            break;
+        case 3:
+            sapXepCot(a, n);
+            printf("Ma trận sau khi sắp xếp theo cột:\n");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     printf("%d ", a[i][j]);
