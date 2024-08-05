@@ -60,6 +60,31 @@ void sapXepCheoChinhVaSongSong(int a[][100], int n) {
         }
     }
 }
+// Hàm di chuyển các phần tử sao cho chẵn ở trên, lẻ ở dưới
+void diChuyenChanLe(int a[][100], int n) {
+    int b[100][100], k = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] % 2 == 0) {
+                b[k / n][k % n] = a[i][j];
+                k++;
+            }
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] % 2 != 0) {
+                b[k / n][k % n] = a[i][j];
+                k++;
+            }
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            a[i][j] = b[i][j];
+        }
+    }
+}
 int main() {
     int a[100][100], n;
     int choice, tangDan;
@@ -122,6 +147,16 @@ int main() {
         case 4:
             sapXepCheoChinhVaSongSong(a, n);
             printf("Ma trận sau khi sắp xếp các đường chéo:\n");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    printf("%d ", a[i][j]);
+                }
+                printf("\n");
+            }
+            break;
+        case 5:
+            diChuyenChanLe(a, n);
+            printf("Ma trận sau khi di chuyển chẵn lên trên, lẻ xuống dưới:\n");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     printf("%d ", a[i][j]);
