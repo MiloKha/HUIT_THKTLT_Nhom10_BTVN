@@ -17,6 +17,9 @@ void lietKeDongChan(int a[MAX][MAX], int m, int n);
 void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
+void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n);
+void hoanViCot(int a[MAX][MAX], int m, int n, int i, int j);
+void hoanViDong(int a[MAX][MAX], int m, int n, int k, int l);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -46,6 +49,9 @@ int main() {
         printf("10. Liet ke cac dong chua gia tri giam dan\n");
         printf("11. Tim gia tri xuat hien nhieu nhat trong ma tran\n");
         printf("12. Tim chu so xuat hien nhieu nhat trong ma tran\n");
+        printf("13. Liet ke cot co tong nho nhat\n");
+        printf("14. Hoan vi hai cot\n");
+        printf("15. Hoan vi hai dong\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -89,6 +95,31 @@ int main() {
             break;
         case 12:
             timChuSoXuatHienNhieuNhat(a, m, n);
+            break;
+        case 13:
+            lietKeCotCoTongNhoNhat(a, m, n);
+            break;
+        case 14:
+            printf("Nhap chi so hai cot can hoan vi (i j): ");
+            scanf("%d %d", &i, &j);
+            if (i >= 0 && i < n && j >= 0 && j < n) {
+                hoanViCot(a, m, n, i, j);
+                xuatMaTran(a, m, n);
+            }
+            else {
+                printf("Chi so cot khong hop le.\n");
+            }
+            break;
+        case 15:
+            printf("Nhap chi so hai dong can hoan vi (k l): ");
+            scanf("%d %d", &k, &l);
+            if (k >= 0 && k < m && l >= 0 && l < m) {
+                hoanViDong(a, m, n, k, l);
+                xuatMaTran(a, m, n);
+            }
+            else {
+                printf("Chi so dong khong hop le.\n");
+            }
             break;
         case 0:
 
