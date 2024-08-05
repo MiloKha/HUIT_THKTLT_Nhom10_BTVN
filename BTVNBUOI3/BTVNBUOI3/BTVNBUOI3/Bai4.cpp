@@ -1,14 +1,14 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
-// H�m ho�n ??i hai s? nguy�n
+// Hàm hoán đổi hai số nguyên
 void swap(int* x, int* y) {
     int temp = *x;
     *x = *y;
     *y = temp;
 }
 
-// H�m s?p x?p ???ng ch�o ph? t?ng d?n/gi?m d?n
+// Hàm sắp xếp đường chéo phụ tăng dần/giảm dần
 void sapXepDuongCheoPhu(int a[][100], int n, int tangDan) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
@@ -20,15 +20,27 @@ void sapXepDuongCheoPhu(int a[][100], int n, int tangDan) {
     }
 }
 
+// Hàm sắp xếp dòng lẻ tăng dần, dòng chẵn giảm dần
+void sapXepDong(int a[][100], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            for (int k = j + 1; k < n; k++) {
+                if ((i % 2 == 0 && a[i][j] > a[i][k]) || (i % 2 != 0 && a[i][j] < a[i][k])) {
+                    swap(&a[i][j], &a[i][k]);
+                }
+            }
+        }
+    }
+}
 
 int main() {
     int a[100][100], n;
     int choice, tangDan;
 
-    printf("Nh?p c?p c?a ma tr?n vu�ng: ");
+    printf("Nhập cấp của ma trận vuông: ");
     scanf("%d", &n);
 
-    printf("Nh?p c�c ph?n t? c?a ma tr?n:\n");
+    printf("Nhập các phần tử của ma trận:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%d", &a[i][j]);
@@ -37,22 +49,32 @@ int main() {
 
     do {
         printf("\n=== MENU ===\n");
-        printf("1. S?p x?p ???ng ch�o ph? t?ng d?n/gi?m d?n\n");
-        printf("2. S?p x?p d�ng l? t?ng d?n, d�ng ch?n gi?m d?n\n");
-        printf("3. S?p x?p c?t l? gi?m d?n, c?t ch?n t?ng d?n\n");
-        printf("4. S?p x?p c�c ???ng ch�o ch�nh v� song song v?i n� t?ng d?n\n");
-        printf("5. Di chuy?n c�c ph?n t? ch?n l�n tr�n, l? xu?ng d??i\n");
-        printf("6. Ki?m tra ??i x?ng qua ???ng ch�o ch�nh\n");
-        printf("0. Tho�t\n");
-        printf("L?a ch?n c?a b?n: ");
+        printf("1. Sắp xếp đường chéo phụ tăng dần/giảm dần\n");
+        printf("2. Sắp xếp dòng lẻ tăng dần, dòng chẵn giảm dần\n");
+        printf("3. Sắp xếp cột lẻ giảm dần, cột chẵn tăng dần\n");
+        printf("4. Sắp xếp các đường chéo chính và song song với nó tăng dần\n");
+        printf("5. Di chuyển các phần tử chẵn lên trên, lẻ xuống dưới\n");
+        printf("6. Kiểm tra đối xứng qua đường chéo chính\n");
+        printf("0. Thoát\n");
+        printf("Lựa chọn của bạn: ");
         scanf("%d", &choice);
 
         switch (choice) {
         case 1:
-            printf("Ch?n 1 ?? s?p x?p t?ng d?n, 0 ?? s?p x?p gi?m d?n: ");
+            printf("Chọn 1 để sắp xếp tăng dần, 0 để sắp xếp giảm dần: ");
             scanf("%d", &tangDan);
             sapXepDuongCheoPhu(a, n, tangDan);
-            printf("Ma tr?n sau khi s?p x?p ???ng ch�o ph?:\n");
+            printf("Ma trận sau khi sắp xếp đường chéo phụ:\n");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    printf("%d ", a[i][j]);
+                }
+                printf("\n");
+            }
+            break;
+        case 2:
+            sapXepDong(a, n);
+            printf("Ma trận sau khi sắp xếp theo dòng:\n");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     printf("%d ", a[i][j]);
@@ -61,10 +83,10 @@ int main() {
             }
             break;
         case 0:
-            printf("Tho�t ch??ng tr�nh.\n");
+            printf("Thoát chương trình.\n");
             break;
         default:
-            printf("L?a ch?n kh�ng h?p l?!\n");
+            printf("Lựa chọn không hợp lệ!\n");
             break;
         }
 
