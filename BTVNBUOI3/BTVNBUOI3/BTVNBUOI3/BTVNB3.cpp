@@ -10,6 +10,7 @@ void xuatCotChan(int a[MAX][MAX], int m, int n);
 void timMaxBien(int a[MAX][MAX], int m, int n);
 int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
 void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
+void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -32,6 +33,7 @@ int main() {
         printf("3. Tim phan tu lon nhat tren bien\n");
         printf("4. Dem phan tu co chu so '2'\n");
         printf("5. Xuat phan tu nho nhat\n");
+        printf("6. Sap xep ma tran theo dong (dong le tang dan, dong chan giam dan)\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -52,6 +54,10 @@ int main() {
             break;
         case 5:
             xuatMinPhanTu(a, m, n);
+            break;
+        case 6:
+            sapXepDongMaTran(a, m, n);
+            xuatMaTran(a, m, n);
             break;
         case 0:
             exit(0);
