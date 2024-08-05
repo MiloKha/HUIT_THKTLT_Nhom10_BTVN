@@ -8,7 +8,7 @@ void taoMaTran(int a[MAX][MAX], int m, int n, int maxVal);
 void xuatMaTran(int a[MAX][MAX], int m, int n);
 void xuatCotChan(int a[MAX][MAX], int m, int n);
 void timMaxBien(int a[MAX][MAX], int m, int n);
-
+int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -30,6 +30,7 @@ int main() {
         printf("1. Tao va xuat ma tran\n");
         printf("2. Xuat cot chua chi so le\n");
         printf("3. Tim phan tu lon nhat tren bien\n");
+        printf("4. Dem phan tu co chu so '2'\n");
         printf("0. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &luaChon);
@@ -44,6 +45,9 @@ int main() {
             break;
         case 3:
             timMaxBien(a, m, n);
+            break;
+        case 4:
+            printf("So luong phan tu co chu so '2': %d\n", demPhanTuCoChuSo2(a, m, n));
             break;
         case 0:
             exit(0);
