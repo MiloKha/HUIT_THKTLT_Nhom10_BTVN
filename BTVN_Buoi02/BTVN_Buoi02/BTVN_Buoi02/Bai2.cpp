@@ -87,6 +87,14 @@ int binary_search(HonSo b[], int n, HonSo x, bool tang) {
     return -1;
 }
 
+void chia_mang(HonSo b[], int n, int s1[], float s2[]) {
+    for (int i = 0; i < n; i++) {
+        s1[i] = b[i].phan_nguyen;
+        s2[i] = (float)b[i].tu_so / b[i].mau_so;
+    }
+}
+
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -145,10 +153,23 @@ int main() {
             if (k != -1) printf("Tim thay hon so tai vi tri %d\n", k);
             else printf("Khong tim thay hon so\n");
             break;
+        case 5:
+            chia_mang(b, n, s1, s2);
+            printf("Mang s1 (phan nguyen):\n");
+            for (int i = 0; i < n; i++) {
+                printf("%d ", s1[i]);
+            }
+            printf("\nMang s2 (phan so):\n");
+            for (int i = 0; i < n; i++) {
+                printf("%.2f ", s2[i]);
+            }
+            printf("\n");
+            break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
         }
         printf("\n");
+
     } while (chon != 0);
 
     return 0;
