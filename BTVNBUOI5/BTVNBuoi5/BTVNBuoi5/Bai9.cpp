@@ -76,7 +76,7 @@ int main() {
         printf("5. Tinh S3(n) theo cach de quy\n");
         printf("6. Tinh S3(n) theo cach khu de quy\n");
         printf("7. Tinh S4(n) theo cach de quy\n");
-        printf("8. Tinh S4(n) theo cach khu de quy\n");
+        printf("8. Tinh S4(n) theo cach khu dequy\n");
         printf("9. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &choice);
