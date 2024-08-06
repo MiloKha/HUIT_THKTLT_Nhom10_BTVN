@@ -1,5 +1,4 @@
 ﻿#include <stdio.h>
-
 // Hàm tính giá trị x_n bằng đệ quy
 int x_recursive(int n) {
     // Định nghĩa giá trị cơ bản
@@ -30,7 +29,6 @@ int main() {
         printf("Gia tri n phai lon hon hoac bang 0.\n");
         return 1;
     }
-
     // Tính giá trị của x_n
     int result = x_recursive(n);
     printf("x(%d) = %d\n", n, result);
