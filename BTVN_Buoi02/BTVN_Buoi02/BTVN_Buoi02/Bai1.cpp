@@ -43,6 +43,18 @@ void liet_ke_nguyen_to(int a[], int n) {
     if (!co_nguyen_to) printf("Khong co so nguyen to nao nho hon %d.\n", n);
 }
 
+int chu_so_dau_le(int n) {
+    while (n >= 10) n /= 10;
+    return n % 2 != 0;
+}
+
+int tong_chu_so_dau_le(int a[], int n) {
+    int tong = 0;
+    for (int i = 0; i < n; i++) {
+        if (chu_so_dau_le(a[i])) tong += a[i];
+    }
+    return tong;
+}
 
 
 void hien_thi_menu() {
@@ -77,6 +89,9 @@ int main() {
             printf("Nhap so nguyen n: ");
             scanf_s("%d", &n);
             liet_ke_nguyen_to(a, n);
+            break;
+        case 3:
+            printf("Tong cac phan tu co chu so dau la chu so le: %d\n", tong_chu_so_dau_le(a, n));
             break;
         default:
             printf("Lua chon khong hop le!\n");
