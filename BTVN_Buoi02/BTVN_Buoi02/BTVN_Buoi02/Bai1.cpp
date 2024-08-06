@@ -175,7 +175,19 @@ void sap_xep_chan_tang_le_nguyen(int a[], int n) {
     }
 }
 
-
+void sap_xep_le_chan(int a[], int n) {
+    int temp;
+    int i = 0, j = n - 1;
+    while (i < j) {
+        while (a[i] % 2 != 0 && i < j) i++;
+        while (a[j] % 2 == 0 && i < j) j--;
+        if (i < j) {
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+    }
+}
 
 int main() {
     srand((unsigned int)time(NULL));
@@ -223,6 +235,12 @@ int main() {
             break;
         case 9:
             sap_xep_chan_tang_le_nguyen(a, n);
+            printf("Mang sau khi sap xep: ");
+            for (int i = 0; i < n; i++) printf("%d ", a[i]);
+            printf("\n");
+            break;
+        case 10:
+            sap_xep_le_chan(a, n);
             printf("Mang sau khi sap xep: ");
             for (int i = 0; i < n; i++) printf("%d ", a[i]);
             printf("\n");
