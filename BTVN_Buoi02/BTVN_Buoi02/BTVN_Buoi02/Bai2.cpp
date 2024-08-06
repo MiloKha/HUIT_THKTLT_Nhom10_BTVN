@@ -105,6 +105,18 @@ void xoa_phan_tu(HonSo b[], int* n, int k) {
     (*n)--;
 }
 
+void them_hon_so(HonSo b[], int* n, HonSo x, int k) {
+    if (k < 0 || k > *n) {
+        printf("Vi tri them khong hop le.\n");
+        return;
+    }
+    for (int i = *n; i > k; i--) {
+        b[i] = b[i - 1];
+    }
+    b[k] = x;
+    (*n)++;
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -180,6 +192,17 @@ int main() {
             scanf_s("%d", &k);
             xoa_phan_tu(b, &n, k);
             printf("Mang sau khi xoa:\n");
+            for (int i = 0; i < n; i++) {
+                printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
+            }
+            break;
+        case 7:
+            printf("Nhap hon so x (phan nguyen, tu so, mau so): ");
+            scanf_s("%d %d %d", &x.phan_nguyen, &x.tu_so, &x.mau_so);
+            printf("Nhap vi tri can them: ");
+            scanf_s("%d", &k);
+            them_hon_so(b, &n, x, k);
+            printf("Mang sau khi them:\n");
             for (int i = 0; i < n; i++) {
                 printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
             }
