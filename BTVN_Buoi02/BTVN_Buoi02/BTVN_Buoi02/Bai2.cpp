@@ -147,6 +147,31 @@ HonSo tim_nho_nhat(HonSo b[], int n) {
     return min;
 }
 
+void vi_tri_phan_nguyen_chan(HonSo b[], int n) {
+    printf("Vi tri cac phan tu co phan nguyen chan: ");
+    for (int i = 0; i < n; i++) {
+        if (b[i].phan_nguyen % 2 == 0) printf("%d ", i);
+    }
+    printf("\n");
+}
+
+void vi_tri_lon_nhat_nho_nhat(HonSo b[], int n) {
+    int vi_tri_lon_nhat = 0, vi_tri_nho_nhat = 0;
+    HonSo max = b[0], min = b[0];
+    for (int i = 1; i < n; i++) {
+        if (so_sanh_hon_so(b[i], max) > 0) {
+            max = b[i];
+            vi_tri_lon_nhat = i;
+        }
+        if (so_sanh_hon_so(b[i], min) < 0) {
+            min = b[i];
+            vi_tri_nho_nhat = i;
+        }
+    }
+    printf("Vi tri phan tu lon nhat: %d\n", vi_tri_lon_nhat);
+    printf("Vi tri phan tu nho nhat: %d\n", vi_tri_nho_nhat);
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -256,6 +281,12 @@ int main() {
              printf("Phan tu nho nhat: %d %d/%d\n", min.phan_nguyen, min.tu_so, min.mau_so);
          }
          break;
+         case 11:
+             vi_tri_phan_nguyen_chan(b, n);
+             break;
+         case 12:
+             vi_tri_lon_nhat_nho_nhat(b, n);
+             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
         }
