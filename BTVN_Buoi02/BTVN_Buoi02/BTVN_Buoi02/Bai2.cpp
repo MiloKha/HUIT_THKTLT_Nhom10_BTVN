@@ -131,6 +131,22 @@ float tong_hon_so(HonSo b[], int n) {
     return tong;
 }
 
+HonSo tim_lon_nhat(HonSo b[], int n) {
+    HonSo max = b[0];
+    for (int i = 1; i < n; i++) {
+        if (so_sanh_hon_so(b[i], max) > 0) max = b[i];
+    }
+    return max;
+}
+
+HonSo tim_nho_nhat(HonSo b[], int n) {
+    HonSo min = b[0];
+    for (int i = 1; i < n; i++) {
+        if (so_sanh_hon_so(b[i], min) < 0) min = b[i];
+    }
+    return min;
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -232,6 +248,14 @@ int main() {
          case 9:
             printf("Tong cac phan tu cua mang: %.2f\n", tong_hon_so(b, n));
             break;
+         case 10:
+         {
+             HonSo max = tim_lon_nhat(b, n);
+             HonSo min = tim_nho_nhat(b, n);
+             printf("Phan tu lon nhat: %d %d/%d\n", max.phan_nguyen, max.tu_so, max.mau_so);
+             printf("Phan tu nho nhat: %d %d/%d\n", min.phan_nguyen, min.tu_so, min.mau_so);
+         }
+         break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
         }
