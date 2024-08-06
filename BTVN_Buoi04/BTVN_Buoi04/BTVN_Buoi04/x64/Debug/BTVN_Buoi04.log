@@ -1,2 +1,4 @@
-﻿  Bai11.cpp
+﻿  Bai12.cpp
+D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi04\BTVN_Buoi04\BTVN_Buoi04\Bai12.cpp(13,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi04\BTVN_Buoi04\BTVN_Buoi04\Bai12.cpp(14,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   BTVN_Buoi04.vcxproj -> D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi04\BTVN_Buoi04\x64\Debug\BTVN_Buoi04.exe
