@@ -117,6 +117,12 @@ void them_hon_so(HonSo b[], int* n, HonSo x, int k) {
     (*n)++;
 }
 
+void tao_mang_phan_so(HonSo b[], int n, float c[]) {
+    for (int i = 0; i < n; i++) {
+        c[i] = b[i].phan_nguyen + (float)b[i].tu_so / b[i].mau_so;
+    }
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -206,6 +212,14 @@ int main() {
             for (int i = 0; i < n; i++) {
                 printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
             }
+            break;
+        case 8:
+            tao_mang_phan_so(b, n, c);
+            printf("Mang phan so:\n");
+            for (int i = 0; i < n; i++) {
+                printf("%.2f ", c[i]);
+            }
+            printf("\n");
             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
