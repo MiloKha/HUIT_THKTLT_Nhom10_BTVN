@@ -124,6 +124,21 @@ int do_dai_day_con_giam_dai_nhat(int a[], int n) {
     return max_len;
 }
 
+int tim_so_nho_thu_hai(int a[], int n) {
+    int min = a[0], min2 = -1;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < min) {
+            min2 = min;
+            min = a[i];
+        }
+        else if ((a[i] < min2 || min2 == -1) && a[i] != min) {
+            min2 = a[i];
+        }
+    }
+    return min2;
+}
+
+
 int main() {
     srand((unsigned int)time(NULL));
     int a[MAX], n;
@@ -157,6 +172,9 @@ int main() {
             break;
         case 6:
             printf("Do dai day con giam dai nhat: %d\n", do_dai_day_con_giam_dai_nhat(a, n));
+            break;
+        case 7:
+            printf("So nho thu hai trong mang: %d\n", tim_so_nho_thu_hai(a, n));
             break;
         default:
             printf("Lua chon khong hop le!\n");
