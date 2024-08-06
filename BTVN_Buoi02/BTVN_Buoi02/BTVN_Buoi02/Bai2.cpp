@@ -123,6 +123,14 @@ void tao_mang_phan_so(HonSo b[], int n, float c[]) {
     }
 }
 
+float tong_hon_so(HonSo b[], int n) {
+    float tong = 0;
+    for (int i = 0; i < n; i++) {
+        tong += b[i].phan_nguyen + (float)b[i].tu_so / b[i].mau_so;
+    }
+    return tong;
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -220,6 +228,9 @@ int main() {
                 printf("%.2f ", c[i]);
             }
             printf("\n");
+            break;
+         case 9:
+            printf("Tong cac phan tu cua mang: %.2f\n", tong_hon_so(b, n));
             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
