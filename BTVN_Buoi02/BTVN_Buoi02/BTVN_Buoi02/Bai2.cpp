@@ -42,7 +42,17 @@ int linear_search(HonSo b[], int n, HonSo x) {
     return -1;
 }
 
-
+void sap_xep_chan_le(HonSo b[], int n) {
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        if (b[i].phan_nguyen % 2 == 0) {
+            HonSo temp = b[j];
+            b[j] = b[i];
+            b[i] = temp;
+            j++;
+        }
+    }
+}
 
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
@@ -86,6 +96,13 @@ int main() {
             k = linear_search(b, n, x);
             if (k != -1) printf("Tim thay hon so tai vi tri %d\n", k);
             else printf("Khong tim thay hon so\n");
+            break;
+        case 3:
+            sap_xep_chan_le(b, n);
+            printf("Mang sau khi sap xep:\n");
+            for (int i = 0; i < n; i++) {
+                printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
+            }
             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
