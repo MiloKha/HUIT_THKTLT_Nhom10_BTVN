@@ -160,6 +160,23 @@ void tim_phan_tu_chua_chu_so_x(int a[], int n, int x) {
     printf("\n");
 }
 
+void sap_xep_chan_tang_le_nguyen(int a[], int n) {
+    int temp;
+    for (int i = 0; i < n - 1; i++) {
+        if (a[i] % 2 == 0) {
+            for (int j = i + 1; j < n; j++) {
+                if (a[j] % 2 == 0 && a[i] > a[j]) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+    }
+}
+
+
+
 int main() {
     srand((unsigned int)time(NULL));
     int a[MAX], n;
@@ -203,6 +220,12 @@ int main() {
             scanf_s("%d", &x);
             printf("Cac phan tu trong mang co chua chu so %d: ", x);
             tim_phan_tu_chua_chu_so_x(a, n, x);
+            break;
+        case 9:
+            sap_xep_chan_tang_le_nguyen(a, n);
+            printf("Mang sau khi sap xep: ");
+            for (int i = 0; i < n; i++) printf("%d ", a[i]);
+            printf("\n");
             break;
         default:
             printf("Lua chon khong hop le!\n");
