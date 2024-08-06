@@ -138,6 +138,27 @@ int tim_so_nho_thu_hai(int a[], int n) {
     return min2;
 }
 
+bool co_chua_chu_so(int so, int x) {
+    char s[12], sx[3];
+    sprintf_s(s, "%d", so);
+    sprintf_s(sx, "%d", x);
+
+    for (int i = 0; i < (int)strlen(s); i++) {
+        for (int j = 0; j < (int)strlen(sx); j++) {
+            if (s[i] == sx[j]) return true;
+        }
+    }
+    return false;
+}
+
+void tim_phan_tu_chua_chu_so_x(int a[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (co_chua_chu_so(a[i], x)) {
+            printf("%d ", a[i]);
+        }
+    }
+    printf("\n");
+}
 
 int main() {
     srand((unsigned int)time(NULL));
@@ -175,6 +196,13 @@ int main() {
             break;
         case 7:
             printf("So nho thu hai trong mang: %d\n", tim_so_nho_thu_hai(a, n));
+            break;
+        case 8:
+            int x;
+            printf("Nhap x: ");
+            scanf_s("%d", &x);
+            printf("Cac phan tu trong mang co chua chu so %d: ", x);
+            tim_phan_tu_chua_chu_so_x(a, n, x);
             break;
         default:
             printf("Lua chon khong hop le!\n");
