@@ -1,5 +1,5 @@
 ﻿  Bai2.cpp
-D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(77,11): warning C4101: 's2': unreferenced local variable
-D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(76,9): warning C4101: 's1': unreferenced local variable
-D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(78,11): warning C4101: 'c': unreferenced local variable
+D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(110,11): warning C4101: 's2': unreferenced local variable
+D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(109,9): warning C4101: 's1': unreferenced local variable
+D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\BTVN_Buoi02\Bai2.cpp(111,11): warning C4101: 'c': unreferenced local variable
   BTVN_Buoi02.vcxproj -> D:\Zalo\TH_KTLT\HUIT_THKTLT_Nhom10_BTVN\BTVN_Buoi02\BTVN_Buoi02\x64\Debug\BTVN_Buoi02.exe

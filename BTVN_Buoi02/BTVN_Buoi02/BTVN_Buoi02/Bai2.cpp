@@ -54,6 +54,39 @@ void sap_xep_chan_le(HonSo b[], int n) {
     }
 }
 
+int so_sanh_hon_so(HonSo x, HonSo y) {
+    float fx = x.phan_nguyen + (float)x.tu_so / x.mau_so;
+    float fy = y.phan_nguyen + (float)y.tu_so / y.mau_so;
+    if (fx < fy) return -1;
+    if (fx > fy) return 1;
+    return 0;
+}
+
+void sap_xep_phan_so(HonSo b[], int n, bool tang) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            int cmp = so_sanh_hon_so(b[i], b[j]);
+            if ((tang && cmp > 0) || (!tang && cmp < 0)) {
+                HonSo temp = b[i];
+                b[i] = b[j];
+                b[j] = temp;
+            }
+        }
+    }
+}
+
+int binary_search(HonSo b[], int n, HonSo x, bool tang) {
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        int mid = (left + right) / 2;
+        int cmp = so_sanh_hon_so(b[mid], x);
+        if (cmp == 0) return mid;
+        if ((tang && cmp < 0) || (!tang && cmp > 0)) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}
+
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
     printf("1. Tao mang hon so ngau nhien\n");
@@ -103,6 +136,14 @@ int main() {
             for (int i = 0; i < n; i++) {
                 printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
             }
+            break;
+        case 4:
+            printf("Nhap hon so can tim (phan nguyen, tu so, mau so): ");
+            scanf_s("%d %d %d", &x.phan_nguyen, &x.tu_so, &x.mau_so);
+            sap_xep_phan_so(b, n, true); 
+            k = binary_search(b, n, x, true);
+            if (k != -1) printf("Tim thay hon so tai vi tri %d\n", k);
+            else printf("Khong tim thay hon so\n");
             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
