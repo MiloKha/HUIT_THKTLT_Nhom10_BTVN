@@ -94,6 +94,16 @@ void chia_mang(HonSo b[], int n, int s1[], float s2[]) {
     }
 }
 
+void xoa_phan_tu(HonSo b[], int* n, int k) {
+    if (k < 0 || k >= *n) {
+        printf("Vi tri xoa khong hop le.\n");
+        return;
+    }
+    for (int i = k; i < *n - 1; i++) {
+        b[i] = b[i + 1];
+    }
+    (*n)--;
+}
 
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
@@ -164,6 +174,15 @@ int main() {
                 printf("%.2f ", s2[i]);
             }
             printf("\n");
+            break;
+        case 6:
+            printf("Nhap vi tri phan tu can xoa: ");
+            scanf_s("%d", &k);
+            xoa_phan_tu(b, &n, k);
+            printf("Mang sau khi xoa:\n");
+            for (int i = 0; i < n; i++) {
+                printf("%d %d/%d\n", b[i].phan_nguyen, b[i].tu_so, b[i].mau_so);
+            }
             break;
         default:
             printf("Lua chon khong hop le. Vui long chon lai.\n");
