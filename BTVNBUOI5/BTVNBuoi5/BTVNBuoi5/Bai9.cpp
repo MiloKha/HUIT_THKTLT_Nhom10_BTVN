@@ -43,7 +43,25 @@ int S3_iterative(int n) {
     }
     return sum;
 }
+// Hàm tính S4(n) theo cách đệ quy
+double factorial(int n) {
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+}
 
+double S4_recursive(int n, int k) {
+    if (k > n) return 0;
+    return ((k * (k + 1)) / factorial(2 * k)) * (pow(-1, k)) + S4_recursive(n, k + 1);
+}
+
+// Hàm tính S4(n) theo cách khử đệ quy
+double S4_iterative(int n) {
+    double sum = 0.0;
+    for (int k = 1; k <= n; ++k) {
+        sum += ((k * (k + 1)) / factorial(2 * k)) * (pow(-1, k));
+    }
+    return sum;
+}
 
 
 int main() {
@@ -57,6 +75,8 @@ int main() {
         printf("4. Tinh S2(n) theo cach khu de quy\n");
         printf("5. Tinh S3(n) theo cach de quy\n");
         printf("6. Tinh S3(n) theo cach khu de quy\n");
+        printf("7. Tinh S4(n) theo cach de quy\n");
+        printf("8. Tinh S4(n) theo cach khu de quy\n");
         printf("9. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &choice);
@@ -84,6 +104,12 @@ int main() {
             break;
         case 6:
             printf("S3(%d) theo cach khu de quy = %d\n", n, S3_iterative(n));
+            break;
+        case 7:
+            printf("S4(%d) theo cach de quy = %.6f\n", n, S4_recursive(n, 1));
+            break;
+        case 8:
+            printf("S4(%d) theo cach khu de quy = %.6f\n", n, S4_iterative(n));
             break;
         case 9:
             printf("Thoat chuong trinh.\n");
