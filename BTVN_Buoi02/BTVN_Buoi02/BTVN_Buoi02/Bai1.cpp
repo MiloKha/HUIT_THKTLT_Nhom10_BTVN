@@ -109,6 +109,21 @@ void sap_xep_chan_tang_le_giam(int a[], int n) {
     }
 }
 
+int do_dai_day_con_giam_dai_nhat(int a[], int n) {
+    int max_len = 1, len = 1;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < a[i - 1]) {
+            len++;
+        }
+        else {
+            if (len > max_len) max_len = len;
+            len = 1;
+        }
+    }
+    if (len > max_len) max_len = len;
+    return max_len;
+}
+
 int main() {
     srand((unsigned int)time(NULL));
     int a[MAX], n;
@@ -139,6 +154,9 @@ int main() {
             printf("Mang sau khi sap xep: ");
             for (int i = 0; i < n; i++) printf("%d ", a[i]);
             printf("\n");
+            break;
+        case 6:
+            printf("Do dai day con giam dai nhat: %d\n", do_dai_day_con_giam_dai_nhat(a, n));
             break;
         default:
             printf("Lua chon khong hop le!\n");
