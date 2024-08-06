@@ -56,6 +56,20 @@ int tong_chu_so_dau_le(int a[], int n) {
     return tong;
 }
 
+void dem_so_lan_xuat_hien(int a[], int n) {
+    int dem[MAX] = { 0 };
+
+    for (int i = 0; i < n; i++) {
+        dem[a[i]]++;
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (dem[a[i]] != 0) {
+            printf("%d xuat hien %d lan\n", a[i], dem[a[i]]);
+            dem[a[i]] = 0;
+        }
+    }
+}
 
 void hien_thi_menu() {
     printf("Chon chuc nang:\n");
@@ -92,6 +106,9 @@ int main() {
             break;
         case 3:
             printf("Tong cac phan tu co chu so dau la chu so le: %d\n", tong_chu_so_dau_le(a, n));
+            break;
+        case 4:
+            dem_so_lan_xuat_hien(a, n);
             break;
         default:
             printf("Lua chon khong hop le!\n");
