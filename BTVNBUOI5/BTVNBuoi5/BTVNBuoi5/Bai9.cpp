@@ -29,6 +29,21 @@ double S2_iterative(int n) {
     }
     return sum;
 }
+// Hàm tính S3(n) theo cách đệ quy
+int S3_recursive(int n) {
+    if (n == 1) return 1;
+    return n * (n + 1) / 2 + S3_recursive(n - 1);
+}
+
+// Hàm tính S3(n) theo cách khử đệ quy
+int S3_iterative(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; ++i) {
+        sum += i * (i + 1) / 2;
+    }
+    return sum;
+}
+
 
 
 int main() {
@@ -40,6 +55,8 @@ int main() {
         printf("2. Tinh S1(n) theo cach khu de quy\n");
         printf("3. Tinh S2(n) theo cach de quy\n");
         printf("4. Tinh S2(n) theo cach khu de quy\n");
+        printf("5. Tinh S3(n) theo cach de quy\n");
+        printf("6. Tinh S3(n) theo cach khu de quy\n");
         printf("9. Thoat\n");
         printf("Nhap lua chon cua ban: ");
         scanf("%d", &choice);
@@ -61,6 +78,12 @@ int main() {
             break;
         case 4:
             printf("S2(%d) theo cach khu de quy = %.6f\n", n, S2_iterative(n));
+            break;
+        case 5:
+            printf("S3(%d) theo cach de quy = %d\n", n, S3_recursive(n));
+            break;
+        case 6:
+            printf("S3(%d) theo cach khu de quy = %d\n", n, S3_iterative(n));
             break;
         case 9:
             printf("Thoat chuong trinh.\n");
