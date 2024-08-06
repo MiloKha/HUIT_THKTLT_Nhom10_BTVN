@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTVNBuoi5", "BTVNBuoi5\BTVNBuoi5.vcxproj", "{DBAE2254-C971-41F5-8922-9DD6E7E762A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Debug|x64.ActiveCfg = Debug|x64
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Debug|x64.Build.0 = Debug|x64
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Debug|x86.Build.0 = Debug|Win32
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Release|x64.ActiveCfg = Release|x64
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Release|x64.Build.0 = Release|x64
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Release|x86.ActiveCfg = Release|Win32
+		{DBAE2254-C971-41F5-8922-9DD6E7E762A0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6237296B-15BD-4274-BBE3-139840C38D6A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI5\\BTVNBuoi5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAE2254-C971-41F5-8922-9DD6E7E762A0}|BTVNBuoi5\\BTVNBuoi5.vcxproj|D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI5\\BTVNBuoi5\\BTVNBuoi5\\Bai9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DBAE2254-C971-41F5-8922-9DD6E7E762A0}|BTVNBuoi5\\BTVNBuoi5.vcxproj|solutionrelative:BTVNBuoi5\\Bai9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai9.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI5\\BTVNBuoi5\\BTVNBuoi5\\Bai9.cpp",
+              "RelativeDocumentMoniker": "BTVNBuoi5\\Bai9.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_THKTLT_NHOM10_BTVN\\BTVNBUOI5\\BTVNBuoi5\\BTVNBuoi5\\Bai9.cpp",
+              "RelativeToolTip": "BTVNBuoi5\\Bai9.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-06T06:34:47.553Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
